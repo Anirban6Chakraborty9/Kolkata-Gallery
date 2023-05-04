@@ -1,0 +1,50 @@
+body{
+    background-image: url(BG2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.head{
+    text-align: center;
+}
+
+.Victoria {
+background-color: transparent;
+width: 350px;
+height: 200px;
+perspective: 1000px;
+float: left;
+padding: 10px 30px;
+}
+
+.Victoria-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+.Victoria:hover .Victoria-inner {
+transform: rotateY(180deg);
+}
+
+.Victoria-front, .Victoria-back {
+position: absolute;
+width: 100%;
+height: 100%; 
+backface-visibility: hidden;
+}
+
+.Victoria-front {
+
+color: black;
+}
+
+.Victoria-back {
+background-color: whitesmoke ;
+opacity: 0.8;
+color: black;
+transform: rotateY(180deg);
+}
